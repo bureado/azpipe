@@ -1,0 +1,14 @@
+{
+  "name": "azpipe",
+  "version": "0.0.0",
+  "description": "Pipes STDIN to an Azure Service Bus Topic via a Subscription",
+  "main": "azpipe.js",
+  "author": {
+    "name": "bureado",
+    "email": "j@bureado.com"
+  },
+  "dependencies": {
+	"azure": "*",
+	"optimist": "*"
+  }
+}
