@@ -1,0 +1,15 @@
+{
+  "name": "dashsub",
+  "version": "0.1",
+  "description": "Publishes data from azpipe using WebSockets",
+  "main": "app.js",
+  "author": {
+    "name": "bureado",
+    "email": "j@bureado.com"
+  },
+  "dependencies": {
+   "express": "*",
+   "ws": "*",
+   "azure": "*"
+  }
+}

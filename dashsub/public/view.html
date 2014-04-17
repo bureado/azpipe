@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Devices Dashboard</title>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    </head>
+    <body>
+
+        <h1>Devices Dashboard</h1>
+        <div id="output">
+        </div>
+        <script>
+                        var Socket;
+                        if( "WebSocket" in window )
+                        {
+                            var url = 'ws://' + window.location.host;
+                            var Socket = new WebSocket( url );
+                            Socket.onmessage = function( evt )
+                            {
+				$('#output').prepend(evt.data + "<br />");
+				console.log(evt.data);
+                            }
+
+                            Socket.onerror = function( e )
+                            {
+                                console.log( '[ERR] ' + e );
+                            }
+                        }
+                        else
+                        {
+                            console.log('[ERR] This browser does not support websockets');
+                        }
+        </script>
+    </body>
+</html>
