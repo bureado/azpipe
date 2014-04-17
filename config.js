@@ -1,4 +1,4 @@
 module.exports = { 
-	sbConnectionString: "Endpoint=...",
-	sbTopic: "MyDeviceSet",
+//	sbConnectionString: "Endpoint=...",
+//	sbTopic: "MyDeviceSet",
 };
