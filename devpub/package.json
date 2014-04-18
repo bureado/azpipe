@@ -1,6 +1,6 @@
 {
   "name": "azpipe",
-  "version": "0.2",
+  "version": "0.0.2",
   "description": "Pipes STDIN to an Azure Service Bus Topic via a Subscription",
   "main": "bin/azpipe.js",
   "author": {
