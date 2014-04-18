@@ -17,9 +17,9 @@ don't want to do it via your shell.
 AMQP
 ----
 
-The Node.js solution (azpipe) uses the REST interface for ASB, but you can
+The Node.js solution (`azpipe`) uses the REST interface for ASB, but you can
 also try AMQP 1.0 if you'd like - there's a sample PHP implementation on
-`devpub.php`. It also reads stdin, outputs stdout.
+`devpub.php`. It also reads stdin and outputs stdout.
 
 AMQP is faster than REST, but it's not a big deal if you plan on sending,
 say, less than 150 messages/second.
@@ -36,3 +36,8 @@ Learn more
 ----------
 
 More information available on [MSDN](http://msdn.microsoft.com/en-us/library/jj841069.aspx).
+
+Disclaimer
+----------
+
+This is just sample content, designed to illustrate ASB capabilities for open source platforms.
