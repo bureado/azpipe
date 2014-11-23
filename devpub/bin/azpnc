@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ "$1" != "" ]
+then
+  PORT=$1
+else
+  PORT=1090
+fi
+
+if [ "$2" = "" -a "$3" = "" ]
+then
+  nc -k -l $PORT | \
+  `dirname $0`/azpipe.js --conns $2 --topic $3
+else
+  nc -k -l $PORT | \
+  `dirname $0`/azpipe.js
+fi
